@@ -1,0 +1,298 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0%;
+    font-family: "Roboto Mono", monospace;
+}
+
+body{
+    background: linear-gradient(180deg, #87CEEB, #FFFB77, #FF9F30, #b2a9ec);
+    background-attachment: fixed;
+}
+/* Do more geometrial circle or other stuff so background is more detaild than blank */
+
+h1{
+  font-family: "Roboto mono", monospace;
+}
+
+.circle{
+    position: fixed;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, purple, black);
+    margin-left: 50px;
+    animation: circleround1 6s forwards infinite alternate;
+}
+
+.circle:nth-child(1){
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, Blue, silver);
+    margin-left: 75%;
+}
+
+
+ /* To do next day or next saturday, that it change*/
+@keyframes circleround1{
+    0% {
+        transform: translateY(50px);
+    }
+    
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.circle:nth-child(2){
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, pink, black);
+    margin-top: 300px;
+    margin-left: 50%;
+}
+.menu{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(black, #87CEEB);
+}
+
+.menu_nav{
+  width: 100%;
+  height: 700%;
+  gap: 10;
+  font-size: 20px;
+  overflow: hidden;
+  font-family: "Roboto Mono", monospace;
+}
+
+a:link , a:visited{
+  background: linear-gradient(black, #87CEEB);
+  color: white;
+  border: 2px solid lightgoldenrodyellow;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sectiontwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.spanWrapper{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #87CEEB, #FFFB77);
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    animation: textAnimation 3s forwards;
+    z-index: auto;
+}
+
+.titlename{
+    margin-left: 0;
+    color: silver;
+    font-size: 40px;
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: reveal 3s forwards ;
+    border-right: 0.01px solid lightgoldenrodyellow;
+}
+
+@keyframes reveal{
+    to{
+        max-width: 100%;
+    }
+}
+
+@keyframes textAnimation {
+    to {
+        transform: translateX(100%);
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+
+
+
+
+  .rectangle{
+    position: relative;
+    margin-left: 68%;
+    height: 800px;
+    width: 600px;
+    border-radius: 20px;
+    background-image: url(nazwa.jpg);
+  }
+
+  .aboutme{
+    font-family: "roboto mono", monospace;
+    font-size: 50px;
+    color: #55ACEE;
+    margin-right: 10px;
+    margin-top: -804px ;
+    width: 65%;
+    height: 700px;
+    position: absolute;
+    border: 5px solid lightgoldenrodyellow;
+    border-radius: 50px;
+    justify-content:flex-end right;
+    animation: showingup 10 sec 
+  }
+
+  /*Finish animation for aboutme so that it change background color and positions of circles and animations for text*/
+
+  .pictures{
+    margin-top: 200px;
+    gap: 10px;
+    position: relative;
+    font-family: "roboto mono", monospace;
+    color: #55ACEE;
+    font-size:15px;
+    border: 5px solid lightgoldenrodyellow;
+    border-radius: 5%;
+  }
+
+  .pictures_circles{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;    
+    background-color: blue;
+  }
+
+  .circles1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;    
+    background-color: blue;
+    margin-left: 86%;
+    position: static;
+  }
+
+  .circles2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;    
+    background-color: blue;   
+  }
+
+  .pictures_information{
+    position: absolute;
+    margin-top: -200px ;
+    margin-left: 300px;
+    border: 5px solid lightgoldenrodyellow;
+  }
+
+  .pictures_secondaly_information{
+    position: absolute;
+    margin-top: -200px ;
+    margin-left: 5px;
+    width: 85%;
+    height: 20%;
+    text-align: right;
+    border: 5px solid lightgoldenrodyellow;
+    overflow: hidden;
+    
+  }
+
+  .startrightli{
+    margin-left: 50px;
+  }
+
+.projects{
+  position: relative;
+  border: 5px solid lightgoldenrodyellow;
+  margin-top: 100px;
+  color: black;
+  font-size: 72px;
+}
+
+.projects_circle{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin-left: 50px;
+  margin: 50px;
+  border-radius: 50%;
+}
+
+.projects_button{
+  background-color: black;
+  color: black;
+  border: 2px solid lightgoldenrodyellow;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 180vh;
+  height: 70%;
+  margin-left: 120px;
+  margin-top: 10px ;
+  gap: 10;
+  font-size: 30px;
+  overflow: hidden;
+  font-family: "Roboto Mono", monospace;
+}
+
+.projects_button:link, .projects_button:visited{
+  color: violet;
+  background: linear-gradient(230deg, lightgoldenrodyellow, blue);
+
+
+}
+
+.projects_button:hover{
+  color:#55ACEE;
+  background-color: #00A4BD;
+}
+
+.cv{
+  position: absolute;
+  justify-content: center;
+  padding-top: 100px;
+  padding-left: 10px;
+}
+
+.cv_box{
+  width: 100.75vh;
+  height: 100vh;
+  background-color: #00A4BD;
+  
+}
+
+.contact{
+  margin-left: 75%; 
+  margin-top: 20%;
+  font-family: "Roboto mono", monospace;
+}
